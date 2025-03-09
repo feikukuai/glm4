@@ -1,7 +1,5 @@
 # Run Ollama via CNB Env
 
-![badge](https://cnb.cool/Anyexyz/Ollama/Env/-/badge/git/latest/code/vscode-started)
-
 在 CNB 中直接运行 Ollama 的预置环境。
 
 ## 快速体验
