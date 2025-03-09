@@ -1,4 +1,4 @@
-# Run Ollama via CNB
+# Run Ollama via CNB Env
 
 ![badge](https://cnb.cool/Anyexyz/Run_Ollama_via_CNB/ollama_env/-/badge/git/latest/code/vscode-started)
 
