@@ -22,6 +22,7 @@ ollama run ${image}
 
 - `gemma3:1b`
 - `gemma3:4b`
+- `gemma3:12b`
 - `gemma2:2b`
 
 ## 进阶
