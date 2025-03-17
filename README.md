@@ -21,6 +21,7 @@ ollama run ${image}
 ### 本仓库已内置模型列表
 
 - `gemma3:1b`
+- `gemma3:4b`
 - `gemma2:2b`
 
 ## 进阶
