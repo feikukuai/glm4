@@ -1,4 +1,4 @@
-# Run gemma on Ollama via CNB
+# Run gemma on Ollama via CNB，分支添加了gml4 32b模型，其他和main一致。
 
 ![badge](https://cnb.cool/Anyexyz/Ollama/gemma/-/badge/git/latest/code/vscode-started)
 
