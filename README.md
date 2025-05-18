@@ -2,7 +2,7 @@
 
 ![badge](https://cnb.cool/Anyexyz/Ollama/gemma/-/badge/git/latest/code/vscode-started)
 
-在 CNB 中直接 使用 Ollama 运行 gemma，预置模型，无需等待，零帧起步。
+在 CNB 中直接 使用 Ollama 运行 gemma，预置模型，无需等待，零帧起步。分支添加了GLM4 32B，使用的时候使用分支云开发，其他和主分支main一致。
 
 ## 快速体验
 
