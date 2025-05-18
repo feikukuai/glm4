@@ -21,6 +21,7 @@ ollama run ${image}
 ### 本仓库已内置模型列表
 
 - `gemma3:1b`
+- 'JollyLlama/GLM-4-32B-0414-Q4_K_M:latest'
 - `gemma3:4b`
 - `gemma3:12b`
 - `gemma3:27b`
