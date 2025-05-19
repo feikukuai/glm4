@@ -15,8 +15,3 @@ $:
           script: echo -n > tempurl.txt
         - name: Temporary Public Network url
           script: ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 443 -R0:localhost:11434 qr@free.pinggy.io 2>/dev/null | grep -m 1 '^https://.*pinggy.link' > tempurl.txt
-        - name: Push tempurl.txt to Git
-          script: git remote add origin https://cnb.cool/glm4-00101/glm4_32b.git
-                  git add .
-                  git commit -m "update tempurl"
-                  git push origin cnb.aILBeXaKhLA-patch-0
