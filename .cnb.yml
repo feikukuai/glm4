@@ -16,4 +16,4 @@ $:
         - name: Push tempurl.txt to Git
           script: git add tempurl.txt
                   git commit -m "update tempurl"
-                  git push origin main
+                  git push origin cnb.aILBeXaKhLA-patch-0
