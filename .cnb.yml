@@ -13,3 +13,7 @@ $:
           script: nohup ollama serve >/dev/null 2>&1 &
         - name: Temporary Public Network url
           script: ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 443 -R0:localhost:11434 qr@free.pinggy.io 2>/dev/null | grep -m 1 '^https://.*pinggy.link' > tempurl.txt
+        - name: Push tempurl.txt to Git
+          script: git add tempurl.txt
+                  git commit -m "update tempurl"
+                  git push origin main
