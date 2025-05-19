@@ -10,8 +10,8 @@ url=$(echo "$output" | grep -o 'https://[^ ]*')
 if [ -z "$url" ]; then
   echo "未找到公网 URL，请检查 SSH 命令输出。"
     exit 1
-    fi
-
+    fi- name: start_pinggy_tunnel
+        script: ./open_pinggy.ssh
     # 打印 URL
     echo "公网 URL: $url"
 
@@ -21,7 +21,4 @@ if [ -z "$url" ]; then
       elif [[ "$OSTYPE" == "darwin"* ]]; then
         open "$url"      # macOS
         elif [[ "$OSTYPE" == "msys"* || "$OSTYPE" == "win32" ]]; then
-          start "$url"     # Windows (Git Bash 或 WSL)
-          else
-            echo "不支持的操作系统，请手动打开: $url"
-            fi
+          start "$url"    
