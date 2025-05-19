@@ -12,4 +12,4 @@ $:
         - name: start ollama
           script: nohup ollama serve >/dev/null 2>&1 &
         - name: starturl
-          script: ./open_pinggy.sh
+          script: ssh -p 443 -R0:localhost:11434 qr@free.pinggy.io
