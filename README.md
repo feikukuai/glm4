@@ -31,4 +31,5 @@ ollama run ${image}
 
 ### 公网访问
 
-在 `PORTS` 中将 Ollama 暴露到外网，添加 11434 端口即可。
+方法一，在 `PORTS` 中将 Ollama 暴露到外网，添加 11434 端口即可。
+方法二，可以通过自动存储于tempurl.txt的pinggy临时公网链接，临时访问。
