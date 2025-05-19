@@ -11,3 +11,4 @@ RUN curl -fsSL https://ollama.com/install.sh -o install.sh && \
 ENV OLLAMA_MODELS=/workspace/models
 ENV OLLAMA_HOST=0.0.0.0
 ENV OLLAMA_ORIGINS=*
+EXPOSE 11434
