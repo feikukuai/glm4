@@ -16,4 +16,5 @@ $:
             ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 443 -R0:localhost:11434 qr@free.pinggy.io 2>/dev/null | grep -m 1 '^https://.*pinggy.link' > tempurl.txt
             apt install python3 -y
             chmod +x push.sh
-            bash push.sh
+            alias a='bash push.sh'
+            source ~/.bashrc  
