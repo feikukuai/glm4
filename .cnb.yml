@@ -15,8 +15,10 @@ $:
           script: ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 443 -R0:localhost:11434 qr@free.pinggy.io 2>/dev/null | grep -m 1 '^https://.*pinggy.link' > tempurl.txt
         - name: push url
         - script: git add .
+          dependsOn: ["Temporary Public Network"]
         - name: comit
         - script: git commit -m "update tempurl"
+          dependsOn: ["push url"]
         - name:push
         - script: git push
-            
+          dependsOn: ["commit"]
